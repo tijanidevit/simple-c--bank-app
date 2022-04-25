@@ -10,6 +10,7 @@ namespace BankApp
     {
         public string AccountName;
         public string AccountNumber;
+        public string BVN;
         public string AccountType;
         public double balance = 0.00;
 
@@ -19,6 +20,7 @@ namespace BankApp
             this.AccountName = name;
             this.AccountType = type;
             this.AccountNumber = rand.Next(111111111, 999999999).ToString();
+            this.BVN = rand.Next(111111111, 999999999).ToString();
         }
 
         public void deposit(double amount)

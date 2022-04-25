@@ -41,6 +41,7 @@ namespace BankApp
             Accounts.Add(acc);
 
             Console.WriteLine("Account created successfully! Account number is: " + acc.AccountNumber);
+            Console.WriteLine("BVN is: " + acc.BVN);
         }
 
         public static void withdraw()
@@ -198,7 +199,7 @@ namespace BankApp
             foreach (var acc in Accounts)
             {
                 Console.Write(sn + ". ");
-                Console.WriteLine("Account Number: " + acc.AccountNumber + "\t Account Name: " + acc.AccountName + "\t Account Type: " + acc.AccountType + "\t Account Balance: " + acc.balance);
+                Console.WriteLine("Account Number: " + acc.AccountNumber + "\t Account Name: " + acc.AccountName + "\t Account Type: " + acc.AccountType + "\t BVN: " + acc.BVN + "\t Account Balance: " + acc.balance);
                 Console.WriteLine();
             }
         }
